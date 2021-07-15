@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<!-- 서버 렌더링을 하면 Controller에서 넘긴 값을, 아닌 경우에는 일반 텍스트를 노출 -->
+<p th:text="'안녕, ' + ${data} + '.'" >안녕하세요. 손님</p>
+</body>
+</html>
