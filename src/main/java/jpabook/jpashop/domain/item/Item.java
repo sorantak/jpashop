@@ -13,7 +13,7 @@ import java.util.List;
 //상속관계 SINGLE_TABLE 전략
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "dtype")
-@Getter //@Setter
+@Getter @Setter
 public abstract class Item {
 
     @Id
