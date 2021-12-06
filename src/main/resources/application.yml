@@ -17,3 +17,19 @@ logging.level:
   org.hibernate.SQL: debug
   # 쿼리 파라미터의 값을 로그로 남김
 #  org.hibernate.type: trace
+
+cloud:
+  aws:
+    credentials:
+      profileName: hazel
+      session:
+        durationMinute:
+          raonk: 15
+    s3:
+      imgBucket: nullnull-motivation
+      rootDirectory: images/
+      temp:
+        session:
+          role:
+            arn: arn:aws:iam::188209031864:user/hazel
+            sessionName: ets-dev-s3-role

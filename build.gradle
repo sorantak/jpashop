@@ -35,6 +35,16 @@ dependencies {
 	testImplementation("org.junit.vintage:junit-vintage-engine") {
 		exclude group: "org.hamcrest", module: "hamcrest-core"
 	}
+
+	implementation 'org.springframework.cloud:spring-cloud-starter-aws:2.2.6.RELEASE'
+	implementation 'org.springframework.boot:spring-boot-devtools'
+
+	implementation 'com.amazonaws:aws-java-sdk:1.11.1006'
+	implementation 'com.amazonaws:aws-java-sdk-s3:1.11.1006'
+	implementation 'com.amazonaws:aws-encryption-sdk-java:1.6.1'
+
+	annotationProcessor "org.springframework.boot:spring-boot-configuration-processor"
+
 }
 
 test {
